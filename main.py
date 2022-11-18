@@ -1,0 +1,30 @@
+# SA-RE-GA-MA-PA
+WAITFOR = 1000
+music.set_volume(255)
+SA = 256
+RE = SA * (9 / 8)
+GA = RE * (10 / 9)
+MA = GA * (16 / 15)
+PA = MA * (9 / 8)
+DHA = PA * (10 / 9)
+NI = DHA * (9 / 8)
+SAA = NI * (16 / 15)
+
+def on_forever():
+    music.play_tone(SA, WAITFOR)
+    music.play_tone(RE, WAITFOR)
+    music.play_tone(GA, WAITFOR)
+    music.play_tone(MA, WAITFOR)
+    music.play_tone(PA, WAITFOR)
+    music.play_tone(DHA, WAITFOR)
+    music.play_tone(NI, WAITFOR)
+    music.play_tone(SAA, WAITFOR)
+    music.play_tone(SAA, WAITFOR)
+    music.play_tone(NI, WAITFOR)
+    music.play_tone(DHA, WAITFOR)
+    music.play_tone(PA, WAITFOR)
+    music.play_tone(MA, WAITFOR)
+    music.play_tone(GA, WAITFOR)
+    music.play_tone(RE, WAITFOR)
+    music.play_tone(SA, WAITFOR)
+basic.forever(on_forever)
